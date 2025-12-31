@@ -1,5 +1,7 @@
 class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+
+    // step-1 static
         int[]n={10,20,30,40};
         System.out.println(n[0]);
         System.out.println(n[1]);
@@ -21,6 +23,8 @@ class Main {
         for(int i=0; i<names.length; i++){
             System.out.println("at index "+ i + " is " + names[i]);
         }
-        
+       int [] a=new int[20];
+a
+
     }
 }
