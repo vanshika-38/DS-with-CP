@@ -23,16 +23,38 @@ class Stack {
         arr[top] = 0;
         top--;
     }
+     public void currstateStack(){
+        System.out.println("top is at "+ top);
+        System.out.print("[");
+        for(int i=0;i<arr.length;i++){
+            System.out.print(arr[i]+",");
+        }
+        System.out.println("]");
+        
+        return;
+        
+    }
 }
 
 class Main {
     public static void main(String[] args) {
         Stack s = new Stack(4);
+        s.currstateStack();
         s.append(50);
+        System.out.println("----After appending 50 -----");
+        s.currstateStack();
         s.append(40);
+        System.out.println("----After appending 40 -----");
+        s.currstateStack();
         s.append(30);
+        System.out.println("----After appending 30 -----");
+        s.currstateStack();
         s.append(20);
-        s.append(10);
+        System.out.println("----After appending 20 -----");
+        s.currstateStack();
+        
         s.pop();
+         System.out.println("----After pop operation-----");
+        s.currstateStack();
     }
 }
